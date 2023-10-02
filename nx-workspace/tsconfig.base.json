@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@./data-access": ["libs/data-access/src/index.ts"],
+      "@./feature-sets": ["libs/feature-sets/src/index.ts"],
+      "@./types": ["libs/types/src/index.ts"],
+      "@./ui-react2": ["libs/ui-react3/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

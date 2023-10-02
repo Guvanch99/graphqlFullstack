@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "projects": {
+    "react-data-access": {
+      "architect": {
+        "generate": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "npx graphql-codegen --config libs/data-access/codegen.yml"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

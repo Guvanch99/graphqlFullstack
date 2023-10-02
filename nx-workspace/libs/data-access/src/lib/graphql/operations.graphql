@@ -1,0 +1,16 @@
+query Games {
+  games {
+    id
+    title
+    platform
+    review {
+      rating
+    }
+  }
+}
+
+mutation addGame($gameInput:gameInput!){
+  addGame(gameInput:$gameInput){
+    id
+  }
+}
